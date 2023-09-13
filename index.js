@@ -65,5 +65,15 @@ function replay()
     gamePattern=[];
     gameOver=true;
 }
+$("h1").click(function (e) { 
+    if(gameOver)
+    {
+        $("h1").text("Level " + level);
+        nextSequence();
+        
+        gameOver=false;
+    }
+    
+});
 
 
