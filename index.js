@@ -65,7 +65,7 @@ function replay()
     gamePattern=[];
     gameOver=true;
 }
-$("h1").click(function (e) { 
+$("body").click(function (e) { 
     if(gameOver)
     {
         $("h1").text("Level " + level);
